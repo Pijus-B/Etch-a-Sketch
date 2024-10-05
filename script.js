@@ -2,10 +2,9 @@
    let click = false;
 
    document.addEventListener("DOMContentLoaded", function(){
-    createBoard(16);
 
     document.querySelector("body").addEventListener("click", function(e){
-        if (e.target.tagName != "BUTTON"){
+        if (e.target.tagName !== "BUTTON"){
             click = !click;
             let draw = document.querySelector('#draw');
             if (click){
@@ -15,14 +14,16 @@
                 draw.innerHTML ="You can't draw right now!";
             }
         }
-    })
+    });
 
     let btn_popup = document.querySelector(".button-24")
     btn_popup.addEventListener("click", function(){
         let size = getSize();
+        if(size){
         createBoard(size);
-    })
-})
+        }
+    });
+});
     function createBoard(size){
         let container = document.querySelector(".container");
 
