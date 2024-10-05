@@ -28,7 +28,7 @@ body{
     display: grid;
     border: 2px solid black;
 }
-.button-24 {
+.button-24, .button-25 {
   background: #FF4742;
   border: 1px solid #FF4742;
   border-radius: 6px;
@@ -54,12 +54,14 @@ body{
 }
 
 .button-24:hover,
-.button-24:active {
+.button-24:active,.button-25:hover,
+.button-25:active  {
   background-color: initial;
   background-position: 0 0;
   color: #FF4742;
 }
 
-.button-24:active {
+.button-24:active,
+.button-25:active {
   opacity: .5;
 }
