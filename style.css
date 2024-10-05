@@ -22,7 +22,7 @@ body{
     align-items: center;
     margin-top: 20px;
 }
-#container{
+.container{
     width: 500px;
     height: 500px;
     display: grid;
